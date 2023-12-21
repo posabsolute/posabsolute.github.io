@@ -13,7 +13,7 @@ And just like that, *the world changed*; floats were gone, layout with tables it
 
 ## The Arduous Journey of Email Development
 
-Crafting emails that can render consistently across various clients (outlook, Gmail, mobile clients, etc.) means resorting to unconventional HTML and CSS practices compared to modern practices; in a nutshell, you need to use tables for layout and inline style everything.
+Crafting emails that can render consistently across various clients (outlook, Gmail, mobile clients, etc.) means resorting to unconventional HTML and CSS practices compared to modern HTML & CSS; in a nutshell, you need to use tables for layout and inline style everything.
 
 Eight years ago, I created [Inker](http://inker.position-absolute.com/); with it, I tried making the ultimate toolbox for building and sending emails. It had it all: strong templating with the Ink framework as a foundation, a bunch of CLI commands to test and generate emails and a service to send them. *It had everything but traction, and no one ever adopted it*.
 
