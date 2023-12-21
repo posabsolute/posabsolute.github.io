@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "The front-end developer's burden"
 ---
 

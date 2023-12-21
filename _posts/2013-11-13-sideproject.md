@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Reflecting on the Sale of a Side Project: The Journey of WeddingDeck"
 ---
 
