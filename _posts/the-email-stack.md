@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Navigating the Complexities of Transactional Email Development in 2024: A Historical Perspective and Some Solutions"
+---
+
 # Navigating the Complexities of Transactional Email Development in 2024: A Historical Perspective and Some Solutions
 
 Email development has historically been a complex field, marked by the challenges of dealing with inconsistent HTML rendering across various email clients. This reached a boiling point when Outlook transitioned from the IE6 engine to Microsoft Word's rendering engine around 2009, amplifying the difficulties in creating consistent email layouts.

@@ -1,3 +1,8 @@
+---
+layout: post
+title: "The front-end developer's burden"
+---
+
 # The front-end developer's burden
 *Date: September 23, 2008*
 

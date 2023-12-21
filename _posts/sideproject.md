@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Reflecting on the Sale of a Side Project: The Journey of WeddingDeck"
+---
+
 # Reflecting on the Sale of a Side Project: The Journey of WeddingDeck
 *Date: November 13, 2013*
 

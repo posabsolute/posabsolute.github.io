@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Where front-end web development will be in 5 years?"
+---
+
 # Where front-end web development will be in 5 years?
 *Date: March 30, 2009*
 

@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Navigating the Quirks of IE6: A Developer's Dilemma"
+---
+
 # Navigating the Quirks of IE6: A Developer's Dilemma
 *Date: April 28, 2009*
 

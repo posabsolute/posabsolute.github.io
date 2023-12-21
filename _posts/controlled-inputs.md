@@ -1,3 +1,8 @@
+---
+layout: post
+title: "The Controlled Input Dilemma in React & Redux"
+---
+
 # The Controlled Input Dilemma in React & Redux
 *Date: January 28, 2016*
 
