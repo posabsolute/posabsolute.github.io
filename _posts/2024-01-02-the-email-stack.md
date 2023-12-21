@@ -134,16 +134,16 @@ It's alright, and if you're not a react shop, this is your best way to build gre
 
 ## Sending Transaction Emails
 
-Almost all web frameworks include a library to send email, and most email service providers (Amazon SES, etc) also provide their own SDK, but two problems emerge:
-* You still need to compile the email with the dynamic variable, which needs to be done before using those libraries
+Almost all web frameworks include a library to send transactional emails, and most email service providers (Amazon SES, etc) also provide their own SDK, but two issues emerge:
+* You still need to compile the email with dynamic variables, which needs to be done before using those libraries.
 * Few of those libraries provide an optional queue/retry mechanism if it fails.
-For me, it's almost inconceivable that my customers won't receive their emails. Think of a receipt; when those service email providers you use to send emails are down, your customers won't receive their receipt.
+For me, it's almost inconceivable that my customers won't receive their emails. Think of a receipt; when those service email providers are down, your customers won't receive their receipt.
 
 You need an optional queue and retry mechanism to manage this issue, with a bunch of integration with Redis, Kafka, Rabbit, etc. 
 
-Furthermore, although using an SDK is all well and good in your monolith, at some point, most companies will have multiple services, and those services will also need to send emails. Those services might be in different languages, but your last template generation will probably be in 1 specific language.
+Furthermore, although using an SDK is all well and good in your monolith, at some point, most companies will have multiple services, and those services will also need to send emails. Those services might be in different programming languages even...
 
-It would be awesome to have a library that can operate either as an SDK integrated inside a service or can be started as its service, exposing API and events integration to send transactional emails.
+It would be awesome to have a library that can operate either as an SDK integrated inside a service or can be started as its own service, exposing API endpoints and events integration to send transactional emails.
 
 > The need for a more holistic solution is evident to me — one that not only aids in creating email templates but also manages the intricacies of sending them, including robust queuing mechanisms.
 
