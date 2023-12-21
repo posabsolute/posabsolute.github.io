@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "The Controlled Input Dilemma in React & Redux"
 ---
 

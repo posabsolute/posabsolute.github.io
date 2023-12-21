@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Navigating the Complexities of Transactional Email Development in 2024: A Historical Perspective and Some Solutions"
 ---
 
