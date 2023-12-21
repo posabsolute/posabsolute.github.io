@@ -128,7 +128,7 @@ If your company's approach to transactional emails involves using fixed, unmodif
 
 #### Passing Dynamic variables to MJML
 
-Despite it's strengths, MJML require supplementation with templating engines like Handlebars.js, Mustache.js, or EJS to handle dynamic content, adding a layer of complexity to the process.
+Despite its strengths, MJML requires supplementation with templating engines like Handlebars.js, Mustache.js, or EJS to handle dynamic content, adding a layer of complexity to the process.
 
 It's alright, and if you're not a react shop, this is your best way to build great email templates; it's not the holy grail, but it's alright.
 
