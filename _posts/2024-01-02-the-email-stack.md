@@ -3,8 +3,6 @@ layout: post
 title: "Navigating the Complexities of Transactional Email Development in 2024: A Historical Perspective and Some Solutions"
 ---
 
-# Navigating the Complexities of Transactional Email Development in 2024: A Historical Perspective and Some Solutions
-
 Email development has historically been a complex field, marked by the challenges of dealing with inconsistent HTML rendering across various email clients. This reached a boiling point when Outlook transitioned from the IE6 engine to Microsoft Word's rendering engine around 2009, amplifying the difficulties in creating consistent email layouts.
 
  As you can guess, the community went crazy. Multiple blog posts and campaigns were launched to try to convince Microsoft to take a step back. Unfortunately, the opposite happened. Microsoft confirmed their choice and published a blog article [The Power of Word in Outlook](http://web.archive.org/web/20090627004005/http://blogs.msdn.com/outlook/archive/2009/06/24/the-power-of-word-in-outlook.aspx). It can be be summarized in one simple quote:

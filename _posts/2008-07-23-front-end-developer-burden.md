@@ -3,9 +3,6 @@ layout: post
 title: "The front-end developer's burden"
 ---
 
-# The front-end developer's burden
-*Date: September 23, 2008*
-
 > Note: This was my first ever written blog post, penned three years after graduating from school.
 
 

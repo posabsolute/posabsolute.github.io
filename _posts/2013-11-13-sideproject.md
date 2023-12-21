@@ -3,9 +3,6 @@ layout: post
 title: "Reflecting on the Sale of a Side Project: The Journey of WeddingDeck"
 ---
 
-# Reflecting on the Sale of a Side Project: The Journey of WeddingDeck
-*Date: November 13, 2013*
-
 > Note: Once upon a time, I had a lot of free time, and I built a lot of side projects. This is the story of one of them.
 
 Today marks a bittersweet moment in my journey as a developer. I've just sold my side project, WeddingDeck, after dedicating over 100 hours to it. The sale price? Only a few hundred dollars. This experience, though somewhat disheartening, is a tale familiar to many in the realm of side projects – a burst of coding energy that gradually wanes until the project is left frozen in time.

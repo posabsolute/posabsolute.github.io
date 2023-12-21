@@ -3,9 +3,6 @@ layout: post
 title: "The Controlled Input Dilemma in React & Redux"
 ---
 
-# The Controlled Input Dilemma in React & Redux
-*Date: January 28, 2016*
-
 > Note: Controlled inputs with Redux never sit right with me, I wrote this article to explore the pros and cons of controlled inputs and how to handle them in React and Redux which was the most popular way in 2016.
 
 React and Redux have transformed the way we handle forms in web applications. However, they also bring a set of challenges, especially when it comes to controlled inputs. React documentation states:
