@@ -12,7 +12,7 @@ The concept of micro-frontends has become increasingly popular as organizations 
 ## Why Micro-Frontends?
 
 1. **Independent Development**: Teams can work on different parts of the application without impacting each other, leading to faster development cycles.
-2. **Technology Agnosticism**: Micro-frontends allow for using various technologies and frameworks, making it easier to adopt new tech or upgrade existing tools.
+2. **Technology Agnostic*: Micro-frontends allow for using various technologies and frameworks, making it easier to adopt new tech or upgrade existing tools.
 3. **Simplified Deployments**: Each micro-frontend can be deployed independently, enabling quicker updates and reducing deployment risks.
 
 ## Webpack Module Federation in Action
