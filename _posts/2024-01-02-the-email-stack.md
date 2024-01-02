@@ -13,7 +13,7 @@ And just like that, *the world changed*; floats were gone, layout with tables it
 
 ## The Arduous Journey of Email Development
 
-Crafting emails that can render consistently across various clients (outlook, Gmail, mobile clients, etc.) means resorting to unconventional HTML and CSS practices compared to modern HTML & CSS; in a nutshell, you need to use tables for layout and inline style everything.
+Crafting emails that can render consistently across various clients (outlook, Gmail, mobile clients, etc.) means resorting to unconventional HTML and CSS practices; in a nutshell, you need to use tables for layout and inline style everything.
 
 Eight years ago, I created [Inker](http://inker.position-absolute.com/); with it, I tried making the ultimate toolbox for building and sending emails. It had it all: strong templating with the Ink framework as a foundation, a bunch of CLI commands to test and generate emails and a service to send them. *It had everything but traction, and no one ever adopted it*.
 
@@ -95,7 +95,7 @@ ReacEmail.render(<JsxParser jsx={jsxString} components={reactEmailComponents} bi
 
 You could also pre-render the JSX email to an HTML soup, but then what about the email variables? You must add a layer on the last-mile delivery to inject those variables into the email before it's sent. Yuck.
 
-There is only one solution I can think of: serverless functions. But this feels too hard for what this provides, I want simple and elegant.
+There is only one solution I can think of, *serverless functions*. But this feels too hard for what this provides, I want simple and elegant.
 
 #### Should you use React-Email and JSX-Email
 
@@ -137,7 +137,8 @@ It's alright, and if you're not a react shop, this is your best way to build gre
 Almost all web frameworks include a library to send transactional emails, and most email service providers (Amazon SES, etc) also provide their own SDK, but two issues emerge:
 * You still need to compile the email with dynamic variables, which needs to be done before using those libraries.
 * Few of those libraries provide an optional queue/retry mechanism if it fails.
-For me, it's almost inconceivable that my customers won't receive their emails. Think of a receipt; when those service email providers are down, your customers won't receive their receipt.
+* 
+For me, it's almost inconceivable that my customers won't receive their emails. Think of a ecommerce receipt; when those email providers are down, your customers won't receive their receipt.
 
 You need an optional queue and retry mechanism to manage this issue, with a bunch of integration with Redis, Kafka, Rabbit, etc. 
 
