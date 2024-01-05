@@ -3,6 +3,21 @@ layout: post
 title: "The front-end developer's burden"
 ---
 
+<style>
+    h1 {
+        font-weight: normal;
+        line-height: 1.5em;
+        margin-bottom: 10px;
+    }
+    .post-title {
+        margin-bottom: -0.5rem;
+    }
+    blockquote {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+</style>
+
 > Note: This was my first ever written blog post, penned three years after graduating from school.
 
 

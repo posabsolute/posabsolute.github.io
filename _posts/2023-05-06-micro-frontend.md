@@ -3,6 +3,21 @@ layout: post
 title: "Exploring Micro-Frontends with Module Federation: Insights from Practice"
 ---
 
+<style>
+    h1 {
+        font-weight: normal;
+        line-height: 1.5em;
+        margin-bottom: 10px;
+    }
+    .post-title {
+        margin-bottom: -0.5rem;
+    }
+    blockquote {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+</style>
+
 > This is a companion post to my [Confoo 2023 presentation](https://drive.google.com/file/d/1K0OWytOmc3tB21ohnBKv-tOQdn5xnQwY/view?usp=sharing).
 
 ## Introduction to Micro-Frontends

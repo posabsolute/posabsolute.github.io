@@ -3,6 +3,21 @@ layout: post
 title: "The Controlled Input Dilemma in React & Redux"
 ---
 
+<style>
+    h1 {
+        font-weight: normal;
+        line-height: 1.5em;
+        margin-bottom: 10px;
+    }
+    .post-title {
+        margin-bottom: -0.5rem;
+    }
+    blockquote {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+</style>
+
 > Note: Controlled inputs with Redux never sit right with me, I wrote this article to explore the pros and cons of controlled inputs and how to handle them in React and Redux which was the most popular way in 2016.
 
 React and Redux have transformed the way we handle forms in web applications. However, they also bring a set of challenges, especially when it comes to controlled inputs. React documentation states:
