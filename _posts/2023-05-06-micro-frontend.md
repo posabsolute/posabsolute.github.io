@@ -7,6 +7,7 @@ title: "Exploring Micro-Frontends with Module Federation: Insights from Practice
     h1 {
         font-weight: normal;
         line-height: 1.5em;
+        font-size: 28px;
         margin-bottom: 10px;
     }
     .post-title {
@@ -16,18 +17,22 @@ title: "Exploring Micro-Frontends with Module Federation: Insights from Practice
         margin-left: 10px;
         margin-right: 10px;
     }
+    h2 { font-weight: normal; }
+    .w {
+        padding: 3em 1em;
+    }
 </style>
 
 > This is a companion post to my [Confoo 2023 presentation](https://drive.google.com/file/d/1K0OWytOmc3tB21ohnBKv-tOQdn5xnQwY/view?usp=sharing).
 
 ## Introduction to Micro-Frontends
 
-The concept of micro-frontends has become increasingly popular as organizations look to scale their teams and applications effectively. Micro-frontends essentially involve splitting a large, monolithic front-end application into smaller, independent applications. This approach offers numerous benefits, including improved scalability, better performance, and enhanced flexibility in technology choices.
+The concept of micro-frontends has become increasingly popular as organizations look to scale their teams and applications effectively. Micro-frontends involve splitting a large, monolithic front-end application into smaller, independent applications. This approach offers numerous benefits, including improved scalability, better performance, and enhanced flexibility in technology choices.
 
 ## Why Micro-Frontends?
 
 1. **Independent Development**: Teams can work on different parts of the application without impacting each other, leading to faster development cycles.
-2. **Technology Agnostic*: Micro-frontends allow for using various technologies and frameworks, making it easier to adopt new tech or upgrade existing tools.
+2. **Technology Agnostic*: Micro-frontends allow for various technologies and frameworks, making adopting new tech or upgrading existing tools easier.
 3. **Simplified Deployments**: Each micro-frontend can be deployed independently, enabling quicker updates and reducing deployment risks.
 
 ## Webpack Module Federation in Action
@@ -44,13 +49,13 @@ Webpack's [Module Federation](https://webpack.js.org/concepts/module-federation/
 
 At AppDirect, we chose a tailored approach that aligns with our organizational structure and product requirements. Our strategy focuses on:
 
-- **Container Architecture**: The [Container application](https://medium.com/nerd-for-tech/micro-front-ends-hands-on-project-63bd3327e162) manages shared logic across all micro front-ends. This architecture not only improves performance by handling routing efficiently (thus eliminating page refreshes) but also ensures better domain isolation. Each Micro front-end contains domain-specific code, facilitating independent development and deployment.
+- **Container Architecture**: The [Container application](https://medium.com/nerd-for-tech/micro-front-ends-hands-on-project-63bd3327e162) manages shared logic across all micro front-ends. This architecture improves performance by handling routing efficiently (thus eliminating page refreshes) and ensures better domain isolation. Each Micro front-end contains domain-specific code, facilitating independent development and deployment.
 
 - **Version Tracking with APIs**: To manage the deployments of our micro-frontends, we employ an API-based approach for version tracking. This ensures that our container is always aware of the latest versions of each micro-frontend, aiding in seamless integration and updates.
 
-- **Internal Design System for Consistency**: To maintain design consistency across our micro-frontends, we promote an internal design system. This includes a UI components library essential for stylistic uniformity, speeding up development time, and enhancing collaboration between developers and designers.
+- **Internal Design System for Consistency**: We promote an internal design system to maintain design consistency across our micro-frontends. This includes a UI components library essential for stylistic uniformity, speeding up development time, and enhancing collaboration between developers and designers.
 
-- **Handling Multi-React Versions**: Due to the distinct nature of our micro-frontends, we face scenarios where different React versions are used. We address this by ensuring that micro-frontends do not share scope with the container application and load the applications with `React.render()`, which means every micro front-ends exposes it's own React-Dom and are not part of the container React life cycle.
+- **Handling Multi-React Versions**: Due to the distinct nature of our micro-frontends, we face scenarios where different React versions are used. We address this by ensuring that micro-frontends do not share scope with the container application and load the applications with `React.render()`, which means every micro front-ends exposes its own React-Dom and is not part of the container React life cycle.
 
 ## Deployment Strategies and Considerations
 
@@ -59,7 +64,7 @@ Implementing micro-frontends requires thoughtful considerations around deploymen
 ### Considerations:
 
 - **Version Tracking**: Ensuring that the container application is aware of the versions of micro-frontends is key to smooth deployments.
-- **Leaking CSS**: CSS can leak from one micro-frontend to another, leading to conflicts and styling issues. This can be addressed by using CSS modules or CSS-in-JS. Be careful which UI library you choose, as some of them are not compatible with the micro front-ends approach.
+- **Leaking CSS**: CSS can leak from one micro-frontend to another, leading to conflicts and styling issues. This can be addressed by using CSS modules or CSS-in-JS. Be careful which UI library you choose, as some are incompatible with the micro front-end approach.
 - **Design Consistency**: Maintaining a consistent look and feel across micro-frontends is essential. This can be achieved through shared design systems and close collaboration between developers and designers but it might never be perfect, this is a trade-off that you need to be aware of.
 - **Server-Side Rendering (SSR)**: While possible with micro-frontends, SSR introduces additional complexities, especially regarding security and performance.
 
