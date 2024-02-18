@@ -4,9 +4,10 @@ title: "Navigating the Complexities of Transactional Email Development in 2024: 
 ---
 
 <style>
-    h1 {
+     h1 {
         font-weight: normal;
         line-height: 1.5em;
+        font-size: 28px;
         margin-bottom: 10px;
     }
     .post-title {
@@ -16,11 +17,15 @@ title: "Navigating the Complexities of Transactional Email Development in 2024: 
         margin-left: 10px;
         margin-right: 10px;
     }
+    h2 { font-weight: normal; }
+    .w {
+        padding: 3em 1em;
+    }
 </style>
 
 Email development has historically been a complex field, marked by the challenges of dealing with inconsistent HTML rendering across various email clients. This reached a boiling point when Outlook transitioned from the IE6 engine to Microsoft Word's rendering engine around 2009, amplifying the difficulties in creating consistent email layouts.
 
- As you can guess, the community went crazy. Multiple blog posts and campaigns were launched to try to convince Microsoft to take a step back. Unfortunately, the opposite happened. Microsoft confirmed their choice and published a blog article [The Power of Word in Outlook](http://web.archive.org/web/20090627004005/http://blogs.msdn.com/outlook/archive/2009/06/24/the-power-of-word-in-outlook.aspx). It can be be summarized in one simple quote:
+ As you can guess, the community went crazy. Multiple blog posts and campaigns were launched to try to convince Microsoft to take a step back. Unfortunately, the opposite happened. Microsoft confirmed their choice and published a blog article [The Power of Word in Outlook](http://web.archive.org/web/20090627004005/http://blogs.msdn.com/outlook/archive/2009/06/24/the-power-of-word-in-outlook.aspx). It can be summarized in one simple quote:
 
 > "We've made the decision to continue to use Word for creating email messages because we believe it's the best email authoring experience around…"
 
@@ -28,11 +33,11 @@ And just like that, *the world changed*; floats were gone, layout with tables it
 
 ## The Arduous Journey of Email Development
 
-Crafting emails that can render consistently across various clients (outlook, Gmail, mobile clients, etc.) means resorting to unconventional HTML and CSS practices; in a nutshell, you need to use tables for layout and inline style everything.
+Crafting emails that can render consistently across various clients (Outlook, Gmail, mobile clients, etc.) means resorting to unconventional HTML and CSS practices; in a nutshell, you need to use tables for layout and inline style everything.
 
 Eight years ago, I created [Inker](http://inker.position-absolute.com/); with it, I tried making the ultimate toolbox for building and sending emails. It had it all: strong templating with the Ink framework as a foundation, a bunch of CLI commands to test and generate emails and a service to send them. *It had everything but traction, and no one ever adopted it*.
 
-> It seems transactional emails is this thing every company needs to do, but almost nobody knows how or wants to do it, and since it's so dirty, let's do it dirty. However, I wouldn't say this was the only reason why Inker failed, but that's for another time.
+> It seems transactional emails are this thing every company needs to do, but almost nobody knows how or wants to do it, and since it's so dirty, let's do it dirty. However, this wasn't the only reason why Inker failed; that's for another time.
 
 ## Modern Solutions: A Search for the Email Holy Grail
 
@@ -97,7 +102,7 @@ If you control the entire email codebase, as in, your customer cannot build/modi
 
 This is as long as you thoroughly validate the variables injected into the email JSX template. This is still JavaScript, executed on your server. It's your javascript, but email variables (customer name, for example) could come from a variety of sources and could be an attack vector on your server.
 
-##### What about if I want to enable an online email editor to allow email templates to be modified?
+##### Using an online email editor to allow email templates to be modified
 
 You have a platform that allows your customers to modify transactional email templates sent to their own customers? Now, things become much more complicated.
 
@@ -147,13 +152,13 @@ Despite its strengths, MJML requires supplementation with templating engines lik
 
 It's alright, and if you're not a react shop, this is your best way to build great email templates; it's not the holy grail, but it's alright.
 
-## Sending Transaction Emails
+## Sending Transactional Emails
 
 Almost all web frameworks include a library to send transactional emails, and most email service providers (Amazon SES, etc) also provide their own SDK, but two issues emerge:
-* You still need to compile the email with dynamic variables, which needs to be done before using those libraries.
+* You still need to compile the email with dynamic variables, which you need to do before using those libraries.
 * Few of those libraries provide an optional queue/retry mechanism if it fails.
-* 
-For me, it's almost inconceivable that my customers won't receive their emails. Think of a ecommerce receipt; when those email providers are down, your customers won't receive their receipt.
+  
+It's almost inconceivable for me that my customers won't receive their emails. Think of an e-commerce receipt; when those email providers are down, your customers won't receive their receipt.
 
 You need an optional queue and retry mechanism to manage this issue, with a bunch of integration with Redis, Kafka, Rabbit, etc. 
 
