@@ -7,6 +7,7 @@ title: "Rethinking Workplace Communication: Beyond the Chaos of Constant Chats"
     h1 {
         font-weight: normal;
         line-height: 1.5em;
+        font-size: 28px;
         margin-bottom: 10px;
     }
     .post-title {
@@ -16,9 +17,13 @@ title: "Rethinking Workplace Communication: Beyond the Chaos of Constant Chats"
         margin-left: 10px;
         margin-right: 10px;
     }
+    h2 { font-weight: normal; }
+    .w {
+        padding: 3em 1em;
+    }
 </style>
 
-> Note: Slack has always been a bit of a misfit for me. It seems well-suited for small startups, but in my experience with large organizations, it becomes overwhelming. This perspective, which I first shared in 2016, remains strikingly relevant as I reflect on the state of Slack today in 2024.
+> Note: Slack has always been a bit of a misfit for me. It seems well-suited for small startups, but it becomes overwhelming in my experience with large organizations. This perspective, which I first shared in 2016, remains strikingly relevant as I think about the state of Slack today in 2024.
 
 Reflecting on Jason Fried's incisive article [Is group chat making you sweat?](https://m.signalvnoise.com/is-group-chat-making-you-sweat-744659addf7d#.smn57tko0), it's intriguing to consider how the corporate world's attitude towards instant messaging has evolved. Only a decade ago, platforms like MSN Messenger were often banned in workplaces due to fears of excessive chatting. Now, we see a complete turnaround, with businesses not only embracing but also investing in sophisticated messaging apps complete with gifs and videos, integrating them deeply into their workflows.
 
