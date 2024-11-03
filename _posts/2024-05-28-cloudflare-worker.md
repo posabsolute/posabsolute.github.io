@@ -25,9 +25,9 @@ title: "Exploring Cloudflare Workers"
 
 ![](https://github.com/posabsolute/posabsolute.github.io/raw/main/_posts/jsdev.png)
 
-The JavaScript landscape has always been a fertile ground for innovation. New frameworks, libraries, and platforms emerge every year, each promising to simplify development or enhance performance in unique ways. This constant churn of ideas and implementations can be overwhelming, but it also represents an opportunity to push the boundaries of what we can achieve as developers. How many languages enable you to build back-end services, web UI and native apps all at the same time? 
+The JavaScript landscape has always been a fertile ground for innovation. New frameworks, libraries and platforms emerge every year, each promising to simplify development or enhance performance in unique ways. This constant churn of ideas and implementations can be overwhelming, but it also represents an opportunity to push the boundaries of what we can achieve as developers. How many languages enable you to build back-end services, web UI and native apps all at the same time? 
 
-> Side note, if you want a fresh look at where full-stack JS frameworks are going, in my opinion, your first stop should be [Solid JS Start](https://start.solidjs.com/) and [Ryan Youtube Channel](https://www.youtube.com/@ryansolid).
+> Side note, if you want a fresh look at where full-stack JS frameworks are going, your first stop should be [Solid JS Start](https://start.solidjs.com/) and [Ryan Youtube Channel](https://www.youtube.com/@ryansolid).
 
 This speed at which our ecosystem evolves can also be prone to be comical; the [Programmers are also human Youtube channel](https://www.youtube.com/watch?v=aWfYxg-Ypm4) hits right in the heart of what makes the JS landscape so overwhelming.
 
