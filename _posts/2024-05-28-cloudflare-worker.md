@@ -33,7 +33,7 @@ This speed at which our ecosystem evolves can also be prone to be comical; the [
 
 It also makes choosing long-term frameworks and libraries difficult. I want to build software that I can enjoy building for years to come, and picking out small libraries tends to result in half your stack not being maintained, and that's just painful. Rant off, I wanted to test out what 2024 had to offer with a small side project and here is how it went.
 
-### Cloudflare has now a Developer Platform?
+### Cloudflare has a Developer Platform?
 
 I was quite surprised to learn that the internet DDOS protection platform had launched products into the serverless ecosystem, the promise is interesting: an entire set of tools set for serverless replicated around the world, meaning no round trip back to the US if you are serving in Australia, it felt like a good place to start.
 
