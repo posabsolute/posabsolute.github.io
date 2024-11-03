@@ -114,7 +114,7 @@ When I first ran password verification, the endpoint took 5 seconds to respond, 
 
 ### Everything else
 
-Cloudflare platform has much more features, Cloud storage, AI APIs, it's kinda the perfect platform dabbling into stuff rapidly, but still, the fact that you cannot set a limit is kinda unfortunate.
+Cloudflare platform has much more features, Cloud storage, AI APIs, it's kinda the perfect platform dabbling into stuff rapidly, but still, the fact that you cannot set a limit is unfortunate.
 
 
 #### What about Hono, Drizzle, Lucia
