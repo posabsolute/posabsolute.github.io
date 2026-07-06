@@ -6,7 +6,6 @@ author: posabsolute
 remote_theme: abhinavs/moonwalk@234eb863ce4e
 theme_config:
   appearance: "dark"
-  back_home_text: "◂ back"
   show_blog: true
   home:
     title_blog: "posts" 

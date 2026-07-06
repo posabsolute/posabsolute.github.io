@@ -131,12 +131,10 @@ header h1:not(.post-title)::after {
 .post-list { list-style: none; padding-left: 0; }
 .post-list-item { margin-bottom: 0.85em; }
 .post-list-item .home-date { color: var(--highlight); margin-right: 0.4em; white-space: nowrap; }
-/* the theme's back-home link on posts (a bare first anchor in the layout) */
-.w > a:first-child {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.8rem;
-  letter-spacing: 0.06em;
+/* the blinking cursor lives on titles: home AND posts */
+h1.post-title::after {
+  content: "▮";
   color: var(--links);
-  text-decoration: none;
+  margin-left: 0.18em;
+  animation: cursor-blink 1.2s steps(1) infinite;
 }
-.w > a:first-child:hover { color: #9df5c0; text-decoration: underline; }
