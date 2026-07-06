@@ -25,7 +25,10 @@ body {
   font-size: 20px;
   line-height: 1.68;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; /* real kerning + ligatures */
+  font-kerning: normal;
 }
+p { text-wrap: pretty; } /* no widows/orphans where supported */
 .w { max-width: 44rem; padding: 4.5em 1.4em 3em; }
 p { margin: 0 0 1.4em; }
 strong, b { color: #f2f1ea; }
