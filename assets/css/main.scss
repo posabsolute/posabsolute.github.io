@@ -91,11 +91,18 @@ p code, li code {
   border-radius: 4px;
   color: var(--code-text);
 }
+/* rouge nests div.highlight > pre.highlight — border the OUTER box only */
 .highlight, pre {
   background: #0b100d !important;
   border: 1px solid #223328;
   border-radius: 6px;
   font-size: 0.8rem; line-height: 1.55;
+}
+.highlight pre, .highlighter-rouge .highlight pre {
+  background: transparent !important;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
 }
 img { border-radius: 6px; display: block; margin: 2.2em auto; max-width: 100%; }
 li { margin-bottom: 0.5em; }
