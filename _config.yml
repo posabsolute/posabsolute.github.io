@@ -5,4 +5,7 @@ author: posabsolute
 # compatible commit; update deliberately, not by surprise.
 remote_theme: abhinavs/moonwalk@234eb863ce4e
 theme_config:
-  appearance: "dark" 
+  appearance: "dark"
+  show_blog: true
+  home:
+    title_blog: "posts" 

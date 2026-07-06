@@ -1,0 +1,109 @@
+---
+---
+
+@import "moonwalk";
+@import "list";
+@import "syntax";
+
+/* ══ local layer: Medium-grade reading + BBS accents (see git log) ══ */
+/* ── phosphor palette: warm reading text, green accents ── */
+html[data-theme="dark"] html, html[data-theme="dark"] body {
+  --bg: #0e1210;
+  --bg-secondary: #151b17;
+  --headings: #ecebe4;
+  --text: #d8d5cc;
+  --text-secondary: #8fa093;
+  --links: #6ee7a0;
+  --highlight: #2f8a4a;
+  --code-text: #a8ecc1;
+  --share-text: #8fa093;
+}
+
+/* ── the reading layer ── */
+body {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.68;
+  -webkit-font-smoothing: antialiased;
+}
+.w { max-width: 44rem; padding: 4.5em 1.4em 3em; }
+p { margin: 0 0 1.4em; }
+strong, b { color: #f2f1ea; }
+main a {
+  color: var(--links);
+  text-decoration: underline;
+  text-decoration-color: rgba(110, 231, 160, 0.35);
+  text-underline-offset: 3px;
+}
+main a:hover { text-decoration-color: var(--links); color: #9df5c0; }
+::selection { background: #2f8a4a; color: #f2fff6; }
+
+/* ── the BBS layer: mono structure, serif prose ── */
+h1, h2, h3, h4, .post-date, .home-date, .credits {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+}
+h1.post-title {
+  font-size: 1.55rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  margin: 0.2em 0 0.3em;
+}
+h1.post-title::before { content: "▸ "; color: var(--links); }
+h2 { font-size: 1.15rem; font-weight: 600; margin: 2.4em 0 0.8em; }
+h3 { font-size: 1rem; font-weight: 600; margin: 2.2em 0 0.7em; }
+h3::before { content: "── "; color: var(--highlight); }
+.post-date {
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+hr { border: 0; margin: 2.5em 0; }
+hr::before {
+  content: "· ── ── ── ·";
+  display: block; text-align: center;
+  color: var(--highlight);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8rem; letter-spacing: 0.2em;
+}
+
+/* ── quotes, code, images ── */
+blockquote {
+  border-left: 3px solid var(--highlight);
+  background: transparent;
+  border-radius: 0;
+  margin: 1.6em 0; padding: 0.1em 0 0.1em 1.2em;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+blockquote p { margin-bottom: 0.6em; }
+code {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: 0.82em;
+}
+p code, li code {
+  background: #1a231d;
+  padding: 0.12em 0.4em;
+  border-radius: 4px;
+  color: var(--code-text);
+}
+.highlight, pre {
+  background: #0b100d !important;
+  border: 1px solid #223328;
+  border-radius: 6px;
+  font-size: 0.8rem; line-height: 1.55;
+}
+img { border-radius: 6px; display: block; margin: 2.2em auto; max-width: 100%; }
+li { margin-bottom: 0.5em; }
+ul li::marker { color: var(--links); }
+
+/* footer + home list */
+.credits { font-size: 0.72rem; letter-spacing: 0.1em; color: var(--text-secondary); margin-top: 4em; }
+.home-date { color: var(--text-secondary); font-size: 0.8rem; }
+
+@media (max-width: 640px) {
+  body { font-size: 17.5px; line-height: 1.62; }
+  .w { padding: 2.5em 1.1em 2em; }
+  h1.post-title { font-size: 1.25rem; }
+}

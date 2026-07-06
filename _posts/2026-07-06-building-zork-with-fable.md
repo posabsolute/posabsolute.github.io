@@ -3,27 +3,6 @@ layout: post
 title: "Rebuilding Zork's world with Claude: Fable vs everything that came before"
 ---
 
-<style>
-     h1 {
-        font-weight: normal;
-        line-height: 1.5em;
-        font-size: 28px;
-        margin-bottom: 10px;
-    }
-    .post-title {
-        margin-bottom: -0.5rem;
-    }
-    blockquote {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    h2 { font-weight: normal; }
-    .w {
-        padding: 3em 1em;
-    }
-    .w img { border-radius: 4px; }
-</style>
-
 ![](https://github.com/posabsolute/zork-ui/raw/main/docs/screenshots/hero-west-of-house.png)
 
 Every model release ships with the same benchmark charts, and I have never known what those numbers mean for a real project. Last week I got a natural experiment instead: I built the same thing twice, once with Opus, once with Fable. So here it is, my position as of july '26, based on one project I can actually show you.
