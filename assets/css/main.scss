@@ -73,6 +73,7 @@ hr::before {
 
 /* ── quotes, code, images ── */
 blockquote {
+  border: 0;
   border-left: 3px solid var(--highlight);
   background: transparent;
   border-radius: 0;
@@ -118,3 +119,17 @@ ul li::marker { color: var(--links); }
   .w { padding: 2.5em 1.1em 2em; }
   h1.post-title { font-size: 1.25rem; }
 }
+
+/* ── nudge: a little more terminal ── */
+header h1:not(.post-title)::after {
+  content: "▮";
+  color: var(--links);
+  margin-left: 0.22em;
+  animation: cursor-blink 1.2s steps(1) infinite;
+}
+@keyframes cursor-blink { 50% { opacity: 0; } }
+.post-list { list-style: none; padding-left: 0; }
+.post-list-item { margin-bottom: 0.85em; }
+.post-list-item .home-date { color: var(--highlight); margin-right: 0.4em; white-space: nowrap; }
+.back-link { color: var(--links); }
+.back-link:hover { color: #9df5c0; }
