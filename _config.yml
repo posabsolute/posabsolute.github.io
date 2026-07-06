@@ -1,5 +1,8 @@
 title: Hello World
 author: posabsolute
-remote_theme: abhinavs/moonwalk
+# pinned: the theme's 2026-04 rewrite uses @use sass, which GitHub Pages'
+# legacy Jekyll can't compile (ships raw sass as CSS). This is the last
+# compatible commit; update deliberately, not by surprise.
+remote_theme: abhinavs/moonwalk@234eb863ce4e
 theme_config:
   appearance: "dark" 
