@@ -86,6 +86,4 @@ The reaction was warmer than I expected, especially from the Zork crowd — the 
 
 Zork was written by four people at MIT on a PDP-10, inventing a genre with one MHz to work with. Forty-six years later I am art-directing a machine that redraws their world pixel by pixel and quotes their grue back at me.
 
-I am going to be directing these models every day for many years to come. I want the one that knows what it is aiming at, and proves where it landed.
-
 _It is pitch black. You are likely to be eaten by a grue._
