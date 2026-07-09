@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rebuilding Zork's world with Claude: Fable vs everything that came before"
+title: "Rebuilding Zork's world with Claude: A Fable Tale"
 ---
 
 ![](https://github.com/posabsolute/zork-ui/raw/main/docs/screenshots/hero-west-of-house.png)
