@@ -5,9 +5,9 @@ title: "Rebuilding Zork's world with Claude: A Fable Tale"
 
 ![](https://github.com/posabsolute/zork-ui/raw/main/docs/screenshots/hero-west-of-house.png)
 
-Every model release ships with the same benchmark charts, and I have never known what those numbers mean for a real project. Last week I got a natural experiment instead: I built the same thing twice, once with Opus, once with Fable. So here it is, my position as of july '26, based on one project I can actually show you.
+Every model release comes with the same benchmark charts, and I have never really known what those numbers mean for a real project. Last week I got a natural experiment instead. I built the same project twice, once with Opus and once with Fable, and this post is my attempt at explaining the difference with something I can actually show you.
 
-The project: the original 1980 Zork I running in the browser. Not a remake: the actual story file, byte for byte, on a real Z-machine. Around the untouched terminal, a shell: 110 animated pixel-art scenes that track the live game state, a generative soundtrack, an auto-drawn map. One rule from the start: observe, never interfere. The UI reads the Z-machine's memory and its output text. It never injects a command, never patches a rule. Strip the shell away and you have exactly the game your parents played, mid-session, unharmed.
+The project is the original 1980 Zork I running in the browser. It is not a remake, it is the actual story file, byte for byte, running on a real Z-machine. Around that untouched terminal I built a shell with 110 animated pixel-art scenes that follow the live game state, a generative soundtrack, and a map that draws itself as you explore. The one rule from the start was to observe and never interfere. The UI reads the Z-machine's memory and its output text, but it never injects a command and never patches a rule. Strip the shell away and you are left with exactly the game your parents played, mid-session, unharmed.
 
 You can [play it here](https://zork.arobase.co). Code is [on GitHub](https://github.com/posabsolute/zork-ui).
 
