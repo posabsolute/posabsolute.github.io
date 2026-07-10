@@ -59,7 +59,7 @@ The wider point is not really about Opus. Think about what most people are actua
 
 ### Reception
 
-I posted it on [r/ClaudeCode](https://www.reddit.com/r/ClaudeCode/comments/1umi07s/zork_ui_entirely_built_with_fable_5_with_110/) and [r/zork](https://www.reddit.com/r/zork/comments/1ulh4j8/imagining_zork_with_a_small_ui/), and more than 200 people have played so far.
+I posted it on [r/ClaudeCode](https://www.reddit.com/r/ClaudeCode/comments/1umi07s/zork_ui_entirely_built_with_fable_5_with_110/), [r/zork](https://www.reddit.com/r/zork/comments/1ulh4j8/imagining_zork_with_a_small_ui/), and later [r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1up7jdr/the_original_zork_from_1980_gets_a_claude_pass/), and more than 700 people have played so far.
 
 The reaction was warmer than I expected, especially from the Zork crowd. The comment that mattered most called out that the visuals and audio _"mesh aesthetically with the text UI"_ without detracting from the text experience, which was the entire design thesis graded by the strictest possible audience. Players also made the product better within hours: a mobile layout shipped after someone couldn't `open mailbox` on his phone, and the room item list died after a commenter rightly said it _"takes all the fun out of realizing you didn't pick something up."_ My favorite comment predicted everyone will get addicted to Fable and then it will get shut off. I understand the fear.
 
