@@ -11,7 +11,7 @@ Two years later the future showed up, so it is worth scoring the prediction hone
 
 Six months after my post, Jeremy Howard [proposed](https://www.answer.ai/posts/2024-09-03-llmstxt.html) [llms.txt](https://llmstxt.org/) (September 2024). It standardizes the reading half of the idea: a markdown file at the root of your site that tells models what matters here, in a form they can digest without fighting your navigation. It got real adoption on the publishing side, thousands of sites ship one.
 
-Two months after that, Anthropic released the [Model Context Protocol](https://modelcontextprotocol.io/) (November 2024). It standardizes the acting half: a protocol for exposing capabilities that an agent can call, with typed tools instead of scraped buttons. It became the de facto standard almost immediately, which is roughly what happens when the company making the most capable agents also publishes the plug.
+Two months after that, Anthropic [released](https://www.anthropic.com/news/model-context-protocol) the [Model Context Protocol](https://modelcontextprotocol.io/) (November 2024). It standardizes the acting half: a protocol for exposing capabilities that an agent can call, with typed tools instead of scraped buttons. It became the de facto standard almost immediately, which is roughly what happens when the company making the most capable agents also publishes the plug.
 
 So the two big halves of ai.txt exist. They just were never one file, and none of them carry my name, which is a very normal way to be right on the internet. I will take it.
 
