@@ -5,13 +5,13 @@ title: "Rebuilding Zork's world with Claude: A Fable Tale"
 
 ![](https://github.com/posabsolute/zork-ui/raw/main/docs/screenshots/hero-west-of-house.png)
 
-Every model release comes with the same benchmark charts, and I have never really known what those numbers mean for a real project. Last week I got a natural experiment instead. I started a project with Opus and completed it with Fable, and this post is my attempt at explaining the difference with something I can actually show you.
+Benchmark charts tell you a model got better. They never tell you what that buys you on a real project. Last week I got the comparison I actually wanted: I started a project with Opus and completed it with Fable, and the difference turned out to be something I can show you instead of argue about.
 
 The project is the original 1980 Zork I running in the browser. It is not a remake, it is the actual story file, byte for byte, running on a real Z-machine. Around that untouched terminal I built a shell with 110 animated pixel-art scenes that follow the live game state, a generative soundtrack, and a map that draws itself as you explore. The one rule from the start was to observe and never interfere. The UI reads the Z-machine's memory and its output text, but it never injects a command and never patches a rule. Strip the shell away and you are left with exactly the game your parents played, mid-session, unharmed.
 
 You can [play it here](https://zork.arobase.co). Code is [on GitHub](https://github.com/posabsolute/zork-ui).
 
-I started the project with Opus and completed it with Fable, on the same repo, with the same person giving directions, a few days apart. Not a perfect experiment, but about as close to an apples-to-apples comparison as real work gets.
+Same repo, same person giving directions, a few days apart. Not a perfect experiment, but about as close to apples-to-apples as real work gets.
 
 ### The Opus day
 
