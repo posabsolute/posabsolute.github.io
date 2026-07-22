@@ -41,7 +41,7 @@ The renderer reads the Z-machine's object tree directly, decoding object names o
 
 ![](https://github.com/posabsolute/zork-ui/raw/main/docs/screenshots/cyclops-room.png)
 
-The discipline is the part that changed how I work. When I asked, offhand, whether anything was worth refactoring, it split a 4,000-line scene file into region modules, then proved nothing changed by pixel-hashing all 110 scenes before and after, in two state configurations, byte-identical. When it rewrote 45 regex triggers into a declarative table, it ran the old code and the new table against a 57-case corpus of real game output and showed zero divergence before deleting anything. When production started returning 502s, it did not restart and pray; it root-caused the failure to an IPv4-only socket bind meeting Railway's IPv6 fabric after a sleep/wake cycle, fixed the bind, then deliberately let the app fall asleep and hit it again to prove the wake worked.
+When I asked, offhand, whether anything was worth refactoring, it split a 4,000-line scene file into region modules, then proved nothing changed by pixel-hashing all 110 scenes before and after, in two state configurations, byte-identical. When it rewrote 45 regex triggers into a declarative table, it ran the old code and the new table against a 57-case corpus of real game output and showed zero divergence before deleting anything. When production started returning 502s, it did not restart and pray; it root-caused the failure to an IPv4-only socket bind meeting Railway's IPv6 fabric after a sleep/wake cycle, fixed the bind, then deliberately let the app fall asleep and hit it again to prove the wake worked.
 
 ### Why Fable is better
 
