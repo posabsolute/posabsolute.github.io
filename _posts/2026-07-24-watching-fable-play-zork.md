@@ -21,7 +21,7 @@ And it turns out reading a model's mind mid-game is just fun. Before its first f
 
 Two rules made the thoughts worth reading instead of theater.
 
-First, no faked discovery. The model openly plays as an expert; the only genuine unknowns are the dice: combat rolls, the thief, whether a remembered trick is remembered right. The recording's own metadata says what it is, thoughts "committed before the command was sent and its outcome known", and explicitly not "a raw readout of internal tokens".
+First, no faked discovery. The model openly plays as an expert; the only genuine unknowns are the dice: combat rolls, the thief, whether a remembered trick is remembered right. The recording file says so itself, in a metadata note: these are the model's own words at the moment of choice, written before each outcome was known, not a readout of internal tokens.
 
 Second, no retakes. The thought is committed in the same call that submits the command, before the outcome exists, and whatever happens stays on the tape. Our run includes a lucky two-swing troll kill, and also two failed pickups that forced it to abandon the sack, the rope, and a knife on a dungeon floor. Whoever takes over the run inherits that mess. The first version of this feature broke the spirit of these rules, the commentary read like a tour guide performing for an audience, so we threw that run away and re-recorded from scratch under the stricter contract. The tape is better because it cost something.
 
